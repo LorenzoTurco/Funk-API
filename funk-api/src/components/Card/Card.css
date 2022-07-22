@@ -1,0 +1,11 @@
+.card {
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  align-items: center;
+}
+.card .card__image {
+  padding: 5%;
+  height: 25rem;
+}/*# sourceMappingURL=Card.css.map */

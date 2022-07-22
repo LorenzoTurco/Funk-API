@@ -1,23 +1,10 @@
-import './App.css';
+import './App.scss';
 import Sidebar from './components/Sidebar/Sidebar'
 import beers from './data/beers';
 import CardList from './components/CardList/CardList';
 
 
 const App = () =>{
-
-  const drawBeerCards = beers.map ((beer) => {
-
-    return(
-    <CardList></CardList>
-
-    )
-
-
-
-  })
-
-
   
 console.log(beers)
 
@@ -26,8 +13,14 @@ console.log(beers)
     <div className="App">
 
 
+
+    <div class="container">
+
       <Sidebar/>
-      
+
+      <CardList beerArr = {beers}></CardList>
+
+      </div>
     </div>
   );
 }

@@ -1,0 +1,49 @@
+.card{
+
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    width:30rem;
+    align-items: center;
+    //gap:2rem;
+
+    .card__image{
+
+        padding:5%;
+        height: 25rem;
+
+
+    }
+
+    .card__name{
+
+
+    }
+
+    .card__tagline{
+
+    }
+
+    .card__abv{
+
+    }
+
+    .card__ph{
+
+
+    }
+
+    .card__firstbrewed{
+
+    }
+
+    .card__description{
+
+
+    }
+
+    .card__ingredients-container{
+
+
+    }
+}

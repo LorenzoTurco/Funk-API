@@ -1,0 +1,6 @@
+.card-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 30rem); //fill page with as many columns as possible where each column is 20rem
+    justify-content: center;  
+    
+}
