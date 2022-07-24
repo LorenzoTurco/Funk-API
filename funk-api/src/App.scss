@@ -1,10 +1,12 @@
+body{
+    background-color: #2babac
+}
 
 
 @media (min-width: 640px){
 .container{
 
-    display:grid;
-    grid-template-columns: 25% 75%;
+    display:flex;
 }
 }
 @media (max-width: 640px){

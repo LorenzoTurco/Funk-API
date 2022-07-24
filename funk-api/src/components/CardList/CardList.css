@@ -1,5 +1,7 @@
 .card-list {
+  margin: 1rem;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 30rem);
-  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  justify-content: end;
+  gap: 2rem;
 }/*# sourceMappingURL=CardList.css.map */

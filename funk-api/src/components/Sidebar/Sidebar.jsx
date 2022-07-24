@@ -2,11 +2,11 @@ import './Sidebar.scss';
 
 const Sidebar = () => {
   return (
-    <>
+    <div className="nav">
 
-    <h2>Funk API</h2>
+    <h2 className="nav__title">Funk API</h2>
     
-    </>
+    </div>
 
   );
 }
