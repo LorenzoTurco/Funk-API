@@ -9,21 +9,24 @@ const App = () =>{
   
 const [beerCatalog, setBeerCatalog] = useState(beers);
 
-const updateBeerCatalog = (newBeerCatalog) => setBeerCatalog(newBeerCatalog);
 
-console.log(beerCatalog);
-  
 
+ 
+
+
+const updateBeerCatalog = (newBeerCatalog) =>
+
+
+{
+
+  setBeerCatalog(newBeerCatalog);
+}
   return (
     <div className="App">
+      <div class="container">
 
-
-
-    <div class="container">
-
-      <Sidebar beerCatalog = {beerCatalog} updateBeerCatalog = {updateBeerCatalog}/>
-
-      <CardList beerArr = {beerCatalog}></CardList>
+        <Sidebar beerCatalog = {beerCatalog} updateBeerCatalog = {updateBeerCatalog}/>
+        <CardList beerArr = {beerCatalog}></CardList>
 
       </div>
     </div>
