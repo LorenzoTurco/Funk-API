@@ -1,7 +1,10 @@
 .nav {
   min-width: 15rem;
 }
-
-.nav__title {
+.nav .nav__title {
   background-color: #ff96b4;
+}
+.nav .nav__filters {
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=Sidebar.css.map */

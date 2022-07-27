@@ -1,10 +1,18 @@
 
 .nav{
     min-width:15rem;
-}
 
-.nav__title{
+        .nav__title{
 
-    background-color:#ff96b4;
+            background-color:#ff96b4;
     
+        }
+
+         .nav__filters{
+
+            display:flex;
+            flex-direction: column;
+
+         }
 }
+
