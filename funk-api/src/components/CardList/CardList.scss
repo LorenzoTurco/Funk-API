@@ -4,5 +4,6 @@
     grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); //fill page with as many columns as possible where each column is 20rem
     justify-content: end;  
     gap:2rem;
+    width:100%;
     
 }

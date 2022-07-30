@@ -4,4 +4,5 @@
   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
   justify-content: end;
   gap: 2rem;
+  width: 100%;
 }/*# sourceMappingURL=CardList.css.map */
