@@ -10,10 +10,7 @@ const Sidebar = ({beerCatalog, setSearchValue, setAbv, setBrewDate, setPh}) => {
   const beersWithPhUnderFour = beerCatalog.filter(beer => beer.ph < 4);*/
 
   const handleSearchBar = (event) =>{
-
-    setSearchValue(event.target.value)
-
-
+    event.target.value.length > 0 ? setSearchValue(`beer_name=${event.target.value}`) : setSearchValue()
   }
 
   const handleCheckbox = (event) =>{
