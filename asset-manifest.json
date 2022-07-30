@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/Funk-API/static/css/main.073c9b0a.css",
-    "main.js": "/Funk-API/static/js/main.41ffebbd.js",
+    "main.css": "/Funk-API/static/css/main.bf2c40c3.css",
+    "main.js": "/Funk-API/static/js/main.e96d2739.js",
     "static/js/787.9760d9ee.chunk.js": "/Funk-API/static/js/787.9760d9ee.chunk.js",
-    "static/media/logo.svg": "/Funk-API/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Funk-API/index.html",
-    "main.073c9b0a.css.map": "/Funk-API/static/css/main.073c9b0a.css.map",
-    "main.41ffebbd.js.map": "/Funk-API/static/js/main.41ffebbd.js.map",
+    "main.bf2c40c3.css.map": "/Funk-API/static/css/main.bf2c40c3.css.map",
+    "main.e96d2739.js.map": "/Funk-API/static/js/main.e96d2739.js.map",
     "787.9760d9ee.chunk.js.map": "/Funk-API/static/js/787.9760d9ee.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.41ffebbd.js"
+    "static/css/main.bf2c40c3.css",
+    "static/js/main.e96d2739.js"
   ]
 }
