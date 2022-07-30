@@ -22,12 +22,6 @@ const Card = ({image,name,tagline,firstBrewed,abv,ph,description,ingredients}) =
           <h6 className="card__ph">{ph} pH</h6>
           <h6 className="card__firstbrewed"> Since {firstBrewed}</h6>
         </div>
-          <ul className="card__ingredients-container">Ingredients
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-          </ul>
 
       </div>
       

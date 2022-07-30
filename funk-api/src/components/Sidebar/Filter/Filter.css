@@ -1,1 +1,10 @@
-/*# sourceMappingURL=Filter.css.map */
+.filter .filter__name {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.filter .filter__checkbox-icon {
+  margin-left: 1.5rem;
+  width: 1rem;
+  height: 1rem;
+  background-color: red;
+}/*# sourceMappingURL=Filter.css.map */

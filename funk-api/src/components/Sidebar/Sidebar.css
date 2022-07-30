@@ -1,10 +1,21 @@
 .nav {
   min-width: 15rem;
+  text-align: center;
 }
 .nav .nav__title {
   background-color: #ff96b4;
+  margin-left: 1rem;
+  font-size: 2rem;
+  font-weight: 500;
 }
-.nav .nav__filters {
+.nav .nav__filters-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 8rem;
+}
+.nav .nav__filters-container .nav__filters-checkboxes {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
 }/*# sourceMappingURL=Sidebar.css.map */

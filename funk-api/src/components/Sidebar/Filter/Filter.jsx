@@ -5,8 +5,9 @@ const Filter = ({name,text, type, handleCheckbox}) => {
   return (
     <div className="filter">
       
-          <label>{text}</label>
-          <input name = {name}type={type} onClick={handleCheckbox}/>
+          <label class="filter__name">{text}</label>
+          <input className="filter__checkbox-icon" name = {name}type={type} onClick={handleCheckbox}/>
+
 
     </div>
 

@@ -35,13 +35,15 @@ const Sidebar = ({beerCatalog, setSearchValue, setAbv, setBrewDate, setPh}) => {
     <div className="nav">
       <h2 className="nav__title">Funk API</h2>
 
-        <div className="nav__filters">
+        <div className="nav__filters-container">
 
           <SearchBar name="filterBySearch" text="Search" type="text" handleSearchBar={handleSearchBar}></SearchBar>
-          <Filter name="ABV > 6%" text="ABV > 6%" type="checkbox" handleCheckbox={handleCheckbox}></Filter>
-          <Filter name="Brewed < 2010" text="Brewed < 2010" type="checkbox" handleCheckbox={handleCheckbox}></Filter>
-          <Filter name="pH < 4" text="pH < 4" type="checkbox" handleCheckbox={handleCheckbox}></Filter>
-
+          
+          <div className="nav__filters-checkboxes">
+            <Filter name="ABV > 6%" text="ABV > 6%" type="checkbox" handleCheckbox={handleCheckbox}></Filter>
+            <Filter name="Brewed < 2010" text="Brewed < 2010" type="checkbox" handleCheckbox={handleCheckbox}></Filter>
+            <Filter name="pH < 4" text="pH < 4" type="checkbox" handleCheckbox={handleCheckbox}></Filter>
+          </div>
           <button>next page</button>
         </div>
     

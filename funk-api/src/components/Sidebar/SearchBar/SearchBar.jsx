@@ -1,12 +1,11 @@
 import './SearchBar.scss';
 
-const SearchBar = ({name,text, type, handleSearchBar}) => {
+const SearchBar = ({name, type, handleSearchBar}) => {
 
   return (
-    <div className="filter">
+    <div className="searchbar">
       
-          <label>{text}</label>
-          <input name = {name}type={type} onChange={handleSearchBar}/>
+          <input class="searchbar__input"name = {name}type={type} placeholder="search..."onChange={handleSearchBar}/>
 
     </div>
 
