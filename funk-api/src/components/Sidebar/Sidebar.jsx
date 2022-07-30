@@ -1,35 +1,35 @@
 import './Sidebar.scss';
 import Filter from './Filter/Filter';
+import SearchBar from './SearchBar/SearchBar';
 
-const Sidebar = ({beerCatalog, updateBeerCatalog}) => {
 
-  const beersWithAbvOverSix = beerCatalog.filter(beer => beer.abv > 6);
+const Sidebar = ({beerCatalog, setSearchValue, setAbv, setBrewDate, setPh}) => {
+
+  /*const beersWithAbvOverSix = beerCatalog.filter(beer => beer.abv > 6);
   const beersBrewedBefore2010 = beerCatalog.filter(beer => beer.first_brewed.slice(beer.first_brewed.length-4) < 2010);
-  const beersWithPhUnderFour = beerCatalog.filter(beer => beer.ph < 4);
+  const beersWithPhUnderFour = beerCatalog.filter(beer => beer.ph < 4);*/
 
+  const handleSearchBar = (event) =>{
+
+    setSearchValue(event.target.value)
+
+
+  }
 
   const handleCheckbox = (event) =>{
 
-    console.log(event)
-    console.log(event.target.checked)
-
-
     switch (event.target.name){
 
-      case "filterBySearch":
-
-      case "highAlcohol":
-
-        if(event.target.checked) updateBeerCatalog(beersWithAbvOverSix);
+      case "ABV > 6%":
+        (event.target.checked) ? setAbv("abv_gt=6") : setAbv("")
         break;
 
-      case "classicRange":
-
-        if(event.target.checked) updateBeerCatalog(beersBrewedBefore2010);
+      case "Brewed < 2010":
+        (event.target.checked) ? setBrewDate("brewed_before=01-2010") : setBrewDate("")
         break;
 
-      case "highAcidity":
-        if(event.target.checked) updateBeerCatalog(beersWithPhUnderFour);
+      case "pH < 4":
+        (event.target.checked) ? setPh("4") : setPh("")
         break;
     }
   }
@@ -40,11 +40,12 @@ const Sidebar = ({beerCatalog, updateBeerCatalog}) => {
 
         <div className="nav__filters">
 
-          <Filter name="filterBySearch" text="Search" type="text"></Filter>
-          <Filter name="highAlcohol" text="ABV > 6%" type="checkbox" handleCheckbox={handleCheckbox}></Filter>
-          <Filter name="classicRange" text="Brewed < 2010" type="checkbox" handleCheckbox={handleCheckbox}></Filter>
-          <Filter name="highAcidity" text="pH < 4" type="checkbox" handleCheckbox={handleCheckbox}></Filter>
+          <SearchBar name="filterBySearch" text="Search" type="text" handleSearchBar={handleSearchBar}></SearchBar>
+          <Filter name="ABV > 6%" text="ABV > 6%" type="checkbox" handleCheckbox={handleCheckbox}></Filter>
+          <Filter name="Brewed < 2010" text="Brewed < 2010" type="checkbox" handleCheckbox={handleCheckbox}></Filter>
+          <Filter name="pH < 4" text="pH < 4" type="checkbox" handleCheckbox={handleCheckbox}></Filter>
 
+          <button>next page</button>
         </div>
     
     </div>
