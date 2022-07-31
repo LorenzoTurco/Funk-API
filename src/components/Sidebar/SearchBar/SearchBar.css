@@ -1,7 +1,10 @@
+.searchbar {
+  width: 100%;
+}
 .searchbar .searchbar__input {
   margin-top: 5rem;
   height: 2rem;
-  width: 10rem;
+  width: 80%;
   font-size: 1rem;
   border-radius: 15px;
 }/*# sourceMappingURL=SearchBar.css.map */

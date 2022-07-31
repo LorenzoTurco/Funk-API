@@ -5,6 +5,7 @@
 .nav .nav__title {
   background-color: #ff96b4;
   margin-left: 1rem;
+  margin-right: 1rem;
   font-size: 2rem;
   font-weight: 500;
 }
@@ -12,7 +13,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8rem;
+  gap: 5rem;
 }
 .nav .nav__filters-container .nav__filters-checkboxes {
   display: flex;
