@@ -14,7 +14,7 @@ const [searchValue, setSearchValue] = useState();
 const getBeers = async () =>{
 
   try{
-    const response = await fetch(`https://api.punkapi.com/v2/beers?${abv}&${brewDate}&${searchValue}`)
+    const response = await fetch(`https://api.punkapi.com/v2/beers?per_page=80&${abv}&${brewDate}&${searchValue}`)
     const data = await response.json();
     if(ph != ""){
       const filteredByPh = data.filter((beer) => beer.ph< ph)

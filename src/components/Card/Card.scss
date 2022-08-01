@@ -1,5 +1,4 @@
 .card{
-
     background-color: #fee57e;
     display: flex;
     flex-direction: column;
@@ -10,29 +9,19 @@
     overflow-y: scroll;
     overflow-x: hidden;
     height: 27rem;
-
     
-    /*&--hide:hover{
-        background: rgba(0,0,0,1);
-        transition: all 0.3s ease-in-out;
 
-    }*/
 .card__image{
-
         padding:5%;
         height: 12rem;
-
-
     }
       
-
     .card__name{
 
         background-color: #ff96b4;
         width: 100%;
         text-align:center;
         margin-bottom:2rem;
-
 
     }
 
@@ -47,7 +36,6 @@
 
     }
 
-
     .card__info{
         display: flex;
         gap: 2rem;
@@ -59,8 +47,6 @@
         font-size:0.8rem;
         font-weight:500;
         font-style: italic;
-
-
     }
 
     .card__ph{
@@ -68,30 +54,14 @@
         font-size:0.8rem;
         font-weight:500;
         font-style: italic;
-
-
-
     }
 
     .card__firstbrewed{
 
-
         font-style: italic;
         font-weight:500;
-
-
     }
 }
-
-    .card__description{
-
-
-    }
-
-    .card__ingredients-container{
-
-
-    }
 }
 
 
@@ -105,7 +75,6 @@
 
 
 .card-opened{
-
 
     background-color: black;
     display: flex;
@@ -128,10 +97,15 @@
 }
 
 .card:hover .card__image{
-
     animation: move 0.2s infinite ease-in-out alternate;
     height: 15rem;
+
 }
+
+.card:hover {
+    box-shadow: 4px 4px 4px 4px;
+}
+
 
 @keyframes move{
     from{
