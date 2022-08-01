@@ -1,7 +1,7 @@
 import './Card.scss';
 import {useState} from 'react';
 
-const Card = ({image,name,tagline,firstBrewed,abv,ph,description,ingredients}) => {
+const Card = ({image,name,tagline,firstBrewed,abv,ph,description}) => {
 
   const [cardSelected, setCardSelected] = useState(false);
 

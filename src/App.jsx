@@ -3,7 +3,6 @@ import Sidebar from './components/Sidebar/Sidebar'
 import CardList from './components/CardList/CardList';
 import { useEffect, useState } from 'react';
 
-
 const App = () =>{
   
 const [beerCatalog, setBeerCatalog] = useState([]);
@@ -11,7 +10,6 @@ const [abv, setAbv] = useState();
 const [brewDate, setBrewDate] = useState();
 const [ph, setPh] = useState("");
 const [searchValue, setSearchValue] = useState();
-
 
 const getBeers = async () =>{
 
@@ -35,7 +33,7 @@ useEffect(() =>{ //refetch beers everytime a filter state changes
     <div className="App">
       <div class="container">
 
-        <Sidebar beerCatalog = {beerCatalog} setSearchValue={setSearchValue} setAbv ={setAbv}  setBrewDate ={setBrewDate}  setPh ={setPh}/>
+        <Sidebar setSearchValue={setSearchValue} setAbv ={setAbv}  setBrewDate ={setBrewDate}  setPh ={setPh}/>
         <CardList beerArr = {beerCatalog} ></CardList>
 
       </div>

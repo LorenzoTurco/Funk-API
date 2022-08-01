@@ -3,11 +3,7 @@ import Filter from './Filter/Filter';
 import SearchBar from './SearchBar/SearchBar';
 
 
-const Sidebar = ({beerCatalog, setSearchValue, setAbv, setBrewDate, setPh}) => {
-
-  /*const beersWithAbvOverSix = beerCatalog.filter(beer => beer.abv > 6);
-  const beersBrewedBefore2010 = beerCatalog.filter(beer => beer.first_brewed.slice(beer.first_brewed.length-4) < 2010);
-  const beersWithPhUnderFour = beerCatalog.filter(beer => beer.ph < 4);*/
+const Sidebar = ({setSearchValue, setAbv, setBrewDate, setPh}) => {
 
   const handleSearchBar = (event) =>{
     event.target.value.length > 0 ? setSearchValue(`beer_name=${event.target.value}`) : setSearchValue()

@@ -16,7 +16,6 @@ const CardList = ({beerArr}) => {
          abv = {beer.abv}
          ph = {beer.ph}
          description = {beer.description}
-         ingredients = "water"
          ></Card>
     </>
         )
