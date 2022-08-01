@@ -8,7 +8,7 @@ const Card = ({image,name,tagline,firstBrewed,abv,ph,description,ingredients}) =
 
   return (
     
-   <div onClick={() => {setCardSelected(!cardSelected)}}>
+   <section title="card" name="card" onClick={() => {setCardSelected(!cardSelected)}}>
 
       {!cardSelected ?
       
@@ -35,7 +35,7 @@ const Card = ({image,name,tagline,firstBrewed,abv,ph,description,ingredients}) =
           
         
           }
-      </div>
+      </section>
   );
 }
 
