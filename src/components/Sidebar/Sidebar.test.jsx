@@ -1,8 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import Sidebar from "./Sidebar";
 
-it("should render the sidebar", () =>{
-
+it("should render the sidebar and it's components", () =>{
 
     render(<Sidebar/>)
 
@@ -10,11 +9,8 @@ it("should render the sidebar", () =>{
     const heading = screen.getByRole("heading");
     const filters = screen.getAllByRole("checkbox");
 
-
     expect(sidebar).toBeInTheDocument();
     expect(heading).toBeInTheDocument();
-
-
 
     filters.forEach(filter => {
         expect(filter).toBeInTheDocument();

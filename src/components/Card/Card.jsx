@@ -8,7 +8,7 @@ const Card = ({image,name,tagline,firstBrewed,abv,ph,description,ingredients}) =
 
   return (
     
-   <section title="card" name="card" onClick={() => {setCardSelected(!cardSelected)}}>
+   <section id="card" onClick={() => {setCardSelected(!cardSelected)}}>
 
       {!cardSelected ?
       

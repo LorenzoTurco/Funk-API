@@ -14,22 +14,17 @@ const [searchValue, setSearchValue] = useState();
 
 
 const getBeers = async () =>{
-  const response = await fetch(`https://api.punkapi.com/v2/beers?${abv}&${brewDate}&${searchValue}`)
-  const data = await response.json();
 
-
-  if(ph != ""){
-  const filteredByPh = data.filter((beer) => beer.ph< ph)
-  setBeerCatalog(filteredByPh);
-  }else{
+  try{
+    const response = await fetch(`https://api.punkapi.com/v2/beers?${abv}&${brewDate}&${searchValue}`)
+    const data = await response.json();
+    if(ph != ""){
+      const filteredByPh = data.filter((beer) => beer.ph< ph)
+      setBeerCatalog(filteredByPh);
+    }else{
       setBeerCatalog(data);
-  }
-}
-
-const filterByPh = (beers) =>{
-
-  beers.filter((beer) => beer.ph > ph)
-
+    } 
+}catch(e){console.log(e.message)}
 }
 
 useEffect(() =>{ //refetch beers everytime a filter state changes
