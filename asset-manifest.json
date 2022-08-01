@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Funk-API/static/css/main.329f285a.css",
-    "main.js": "/Funk-API/static/js/main.c2ae2926.js",
+    "main.css": "/Funk-API/static/css/main.ca509ce0.css",
+    "main.js": "/Funk-API/static/js/main.70d230e5.js",
     "static/js/787.9760d9ee.chunk.js": "/Funk-API/static/js/787.9760d9ee.chunk.js",
     "index.html": "/Funk-API/index.html",
-    "main.329f285a.css.map": "/Funk-API/static/css/main.329f285a.css.map",
-    "main.c2ae2926.js.map": "/Funk-API/static/js/main.c2ae2926.js.map",
+    "main.ca509ce0.css.map": "/Funk-API/static/css/main.ca509ce0.css.map",
+    "main.70d230e5.js.map": "/Funk-API/static/js/main.70d230e5.js.map",
     "787.9760d9ee.chunk.js.map": "/Funk-API/static/js/787.9760d9ee.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.329f285a.css",
-    "static/js/main.c2ae2926.js"
+    "static/css/main.ca509ce0.css",
+    "static/js/main.70d230e5.js"
   ]
 }
